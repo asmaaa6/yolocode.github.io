@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de Connexion</title>
+    <link rel="stylesheet" href="celine.css">
+
+</head>
+<body>
+
+<div class="wrapper">
+    <form id="loginForm">
+        <div class="input-field">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" style="width: 300px;">
+        </div>
+        <div class="input-field">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" style="width: 300px;">
+        </div>
+        <div class="options">
+            <button type="submit">Log In</button>
+            <label>
+                <input type="checkbox" name="remember"> Remember Me
+            </label>
+        </div>
+        <a href="#" id="forgotPasswordLink">Lost your password?</a>
+
+        <div id="forgotPasswordSection" style="display: none;">
+            <h2>Forgotten Password</h2>
+            <div class="input-field">
+                <input type="text" id="forgotUsernameEmail" name="forgotUsernameEmail" placeholder="Enter username or email">
+            </div>
+            <button type="button" id="getNewPassword">Get New Password</button>
+            <button type="button" id="cancelForgotPassword">Cancel</button>
+        </div>
+    </form>
+</div>
+
+<script src="celine.js"></script>
+
+</body>
+</html>

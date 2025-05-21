@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Validation commande</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 20px auto;
+      background:#eae3e3;;
+      color: #333;
+      padding: 10px;
+    }
+    h1 {
+      color: #212f3d;
+      margin-bottom: 20px;
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+    }
+    .ligne {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 15px;
+    }
+    .champ {
+      flex: 1;
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .bouton {
+      background: #212f3d;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 20px;
+    }
+    .bouton:hover {
+      background: #1f2122;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Validation commande</h1>
+
+  <form id="form-commande">
+
+    <div class="ligne">
+      <div class="champ">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required>
+      </div>
+      <div class="champ">
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" required>
+      </div>
+    </div>
+
+    <div class="ligne">
+      <div class="champ">
+        <label for="adresse">Adresse :</label>
+        <input type="text" id="adresse" name="adresse" required>
+      </div>
+      <div class="champ">
+        <label for="ville">Ville :</label>
+        <input type="text" id="ville" name="ville" required>
+      </div>
+    </div>
+
+    <div class="ligne">
+      <div class="champ">
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="champ">
+        <label for="pays">Pays :</label>
+        <input type="text" id="pays" name="pays" required>
+      </div>
+    </div>
+
+    <div class="champ" style="margin-bottom: 15px;">
+      <label for="code">Code postal :</label>
+      <input type="text" id="code" name="code" required>
+    </div>
+
+    <div class="champ" style="margin-bottom: 15px;">
+      <label for="numero">Téléphone :</label>
+      <input type="tel" id="numero" name="numero" required placeholder="Ex : 0612345678">
+    </div>
+
+    <button type="submit" class="bouton">Valider et Payer</button>
+  </form>
+
+  <script>
+    var form = document.getElementById('form-commande');
+
+    form.onsubmit = function(e) {
+      e.preventDefault();
+
+      if (!form.checkValidity()) {
+        alert("N'oubliez pas de remplir tous les champs obligatoires.");
+        return false;
+      }
+
+      var numero = document.getElementById('numero').value.trim();
+      var regexTel = /^0[1-9][0-9]{8}$/;
+
+      if (!regexTel.test(numero)) {
+        alert("Merci de saisir un numéro de téléphone valide (ex : 0612345678).");
+        return false;
+      }
+
+      var codePostal = document.getElementById('code').value.trim();
+      var regexCode = /^[0-9]{5}$/;
+
+      if (!regexCode.test(codePostal)) {
+        alert("Merci de saisir un code postal valide (5 chiffres).");
+        return false;
+      }
+
+      window.location.href = "succescommande.html";
+    };
+  </script>
+
+</body>
+</html>
