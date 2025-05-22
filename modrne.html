@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="image.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    <title>Galerie de Produits</title>
+   
+</head>
+<body>
+    <header> 
+        <div style="display: flex; justify-content: space-between;align-items: center;max-width: 800px;margin:auto;">
+          <div class="cphd">
+            <a href="panier.html" class="bouton-panier">
+                <i class="fas fa-shopping-cart icone-panier"></i>
+                <span class="compteur-panier" id="compteur">0</span>
+            </a>
+          </div>
+        </div>
+    </header>
+
+    <div class="collec-mod">
+        <img src="capture2-moderne.jpg" alt="Collection moderne & paysage" class="mod-image">
+        <div class="collection-subtitle">COLLECTION</div>
+        <div class="collection-title">MODERNE & PAYSAGE</div>
+    </div>
+        
+    <div class="container">
+        <div class="row">
+          
+            <div class="column">
+                <div class="animph" id="slideshow1">
+                    <div class="slide">
+                        <img class="produit-img" src="MOD1.jpg" alt="Papier peint fleurs blanches">
+                    </div>
+                    
+                    <div class="slide">
+                        <img class="produit-img" src="MOD1+.jpg" alt="Papier peint fleurs roses">
+                    </div>
+                    
+                    <a class="prev" onclick="changeSlide(-1, 'slideshow1')">❮</a>
+                    <a class="next" onclick="changeSlide(1, 'slideshow1')">❯</a>
+                </div>
+                
+                <div class="produit">
+                    <span class="ref-produit">Réf : YLSPL25</span>
+                    <div class="prix-produit">Prix:69,99 €</div>
+                    <div class="boutton">
+                        <button class="ajouter-au-panier" data-ref="YLSPL25" data-price="79.99" data-name="papier peint fleurs blanches " data-image="MOD1.jpg">Ajouter au panier</button>
+                        <button class="zoom">🔍</button>
+                    </div>
+                </div>
+                
+                <div class="dots-container" id="dots1">
+                    <span class="dot" onclick="currentSlide(1, 'slideshow1')"></span>
+                    <span class="dot" onclick="currentSlide(2, 'slideshow1')"></span>
+                </div>
+            </div>
+            
+            
+            <div class="column">
+                <div class="animph" id="slideshow2">
+                    <div class="slide">
+                        <img class="produit-img" src="MOD2.jpg" alt="Papier peint fleurs blanches">
+                    </div>
+                    
+                    <div class="slide">
+                        <img class="produit-img" src="MOD2+.jpg" alt="Papier peint fleurs bleues">
+                    </div>
+                    
+                    <a class="prev" onclick="changeSlide(-1, 'slideshow2')">❮</a>
+                    <a class="next" onclick="changeSlide(1, 'slideshow2')">❯</a>
+                </div>
+                
+                <div class="produit">
+                    <span class="ref-produit">Réf : YLSPL27</span>
+                    <div class="prix-produit">Prix:76,99 €</div>
+                    <div class="boutton">
+                        <button class="ajouter-au-panier">Ajouter au panier</button>
+                        <button class="zoom">🔍</button>
+                    </div>
+                </div>
+                
+                <div class="dots-container" id="dots2">
+                    <span class="dot" onclick="currentSlide(1, 'slideshow2')"></span>
+                    <span class="dot" onclick="currentSlide(2, 'slideshow2')"></span>
+                </div>
+            </div>
+            
+            <!-- Troisième diaporama -->
+            <div class="column">
+                <div class="animph" id="slideshow3">
+                    <div class="slide">
+                        <img class="produit-img" src="MOD3.jpg" alt="Papier peint fleurs mauves">
+                    </div>
+                    
+                    <div class="slide">
+                        <img class="produit-img" src="MOD3+.jpg" alt="Papier peint fleurs violettes">
+                    </div>
+                    
+                    <a class="prev" onclick="changeSlide(-1, 'slideshow3')">❮</a>
+                    <a class="next" onclick="changeSlide(1, 'slideshow3')">❯</a>
+                </div>
+                
+                <div class="produit">
+                    <span class="ref-produit">Réf : YLSPL19</span>
+                    <div class="prix-produit">Prix:69,99 €</div>
+                    <div class="boutton">
+                        <button class="ajouter-au-panier">Ajouter au panier</button>
+                        <button class="zoom">🔍</button>
+                    </div>
+                </div>
+                
+                <div class="dots-container" id="dots3">
+                    <span class="dot" onclick="currentSlide(1, 'slideshow3')"></span>
+                    <span class="dot" onclick="currentSlide(2, 'slideshow3')"></span>
+                </div>
+            </div>
+            
+            <!-- Quatrième diaporama -->
+            <div class="column">
+                <div class="animph" id="slideshow4">
+                    <div class="slide">
+                        <img class="produit-img" src="MOD4.jpg" alt="Papier peint motif floral">
+                    </div>
+                    
+                    <div class="slide">
+                        <img class="produit-img" src="MOD4+.jpg" alt="Papier peint feuilles">
+                    </div>
+                    
+                    <a class="prev" onclick="changeSlide(-1, 'slideshow4')">❮</a>
+                    <a class="next" onclick="changeSlide(1, 'slideshow4')">❯</a>
+                </div>
+                
+                <div class="produit">
+                    <span class="ref-produit">Réf : YLSPL30</span>
+                    <div class="prix-produit">Prix:68,99 €</div>
+                    <div class="boutton">
+                        <button class="ajouter-au-panier">Ajouter au panier</button>
+                        <button class="zoom">🔍</button>
+                    </div>
+                </div>
+                
+                <div class="dots-container" id="dots4">
+                    <span class="dot" onclick="currentSlide(1, 'slideshow4')"></span>
+                    <span class="dot" onclick="currentSlide(2, 'slideshow4')"></span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Deuxième rangée -->
+        <div class="row">
+            <!-- Cinquième diaporama -->
+            <div class="column">
+                <div class="animph" id="slideshow5">
+                    <div class="slide">
+                        <img class="produit-img" src="MOD5.jpg" alt="Papier peint fleurs turquoise">
+                    </div>
+                    
+                    <div class="slide">
+                        <img class="produit-img" src="MOD5+.jpg" alt="Papier peint motif aquarelle">
+                    </div>
+                    
+                    <a class="prev" onclick="changeSlide(-1, 'slideshow5')">❮</a>
+                    <a class="next" onclick="changeSlide(1, 'slideshow5')">❯</a>
+                </div>
+                
+                <div class="produit">
+                    <span class="ref-produit">Réf : YLSPL33</span>
+                    <div class="prix-produit">Prix:52,99 €</div>
+                    <div class="boutton">
+                        <button class="ajouter-au-panier">Ajouter au panier</button>
+                        <button class="zoom">🔍</button>
+                    </div>
+                </div>
+                
+                <div class="dots-container" id="dots5">
+                    <span class="dot" onclick="currentSlide(1, 'slideshow5')"></span>
+                    <span class="dot" onclick="currentSlide(2, 'slideshow5')"></span>
+                </div>
+            </div>
+            
+            <!-- Sixième diaporama -->
+            <div class="column">
+                <div class="animph" id="slideshow6">
+                    <div class="slide">
+                        <img class="produit-img" src="MOD6.jpg" alt="Papier peint fleurs blanches">
+                    </div>
+                    
+                    <div class="slide">
+                        <img class="produit-img" src="MOD6+.jpg" alt="Papier peint fleurs délicates">
+                    </div>
+                    
+                    <a class="prev" onclick="changeSlide(-1, 'slideshow6')">❮</a>
+                    <a class="next" onclick="changeSlide(1, 'slideshow6')">❯</a>
+                </div>
+                
+                <div class="produit">
+                    <span class="ref-produit">Réf : YLSPL25</span>
+                    <div class="prix-produit">Prix:57,99 €</div>
+                    <div class="boutton">
+                        <button class="ajouter-au-panier">Ajouter au panier</button>
+                        <button class="zoom">🔍</button>
+                    </div>
+                </div>
+                
+                <div class="dots-container" id="dots6">
+                    <span class="dot" onclick="currentSlide(1, 'slideshow6')"></span>
+                    <span class="dot" onclick="currentSlide(2, 'slideshow6')"></span>
+                </div>
+            </div>
+            
+            <!-- Septième diaporama -->
+            <div class="column">
+                <div class="animph" id="slideshow7">
+                    <div class="slide">
+                        <img class="produit-img" src="MOD7.jpg" alt="Papier peint branche fleurie">
+                    </div>
+                    
+                    <div class="slide">
+                        <img class="produit-img" src="MOD7+.jpg" alt="Papier peint fleurs de cerisier">
+                    </div>
+                    
+                    <a class="prev" onclick="changeSlide(-1, 'slideshow7')">❮</a>
+                    <a class="next" onclick="changeSlide(1, 'slideshow7')">❯</a>
+                </div>
+                
+                <div class="produit">
+                    <span class="ref-produit">Réf : YLSPL44</span>
+                    <div class="prix-produit">Prix:78,99 €</div>
+                    <div class="boutton">
+                        <button class="ajouter-au-panier">Ajouter au panier</button>
+                        <button class="zoom">🔍</button>
+                    </div>
+                </div>
+                
+                <div class="dots-container" id="dots7">
+                    <span class="dot" onclick="currentSlide(1, 'slideshow7')"></span>
+                    <span class="dot" onclick="currentSlide(2, 'slideshow7')"></span>
+                </div>
+            </div>
+            
+            <!-- Huitième diaporama -->
+            <div class="column">
+                <div class="animph" id="slideshow8">
+                    <div class="slide">
+                        <img class="produit-img" src="MOD8.jpg" alt="Papier peint feuilles beiges">
+                    </div>
+                    
+                    <div class="slide">
+                        <img class="produit-img" src="MOD8+.jpg" alt="Papier peint motif végétal">
+                    </div>
+                    
+                    <a class="prev" onclick="changeSlide(-1, 'slideshow8')">❮</a>
+                    <a class="next" onclick="changeSlide(1, 'slideshow8')">❯</a>
+                </div>
+                
+                <div class="produit">
+                    <span class="ref-produit">Réf : YLSPL38</span>
+                    <div class="prix-produit">Prix:49,00€</div>
+                    <div class="boutton">
+                        <button class="ajouter-au-panier">Ajouter au panier</button>
+                        <button class="zoom">🔍</button>
+                    </div>
+                </div>
+                
+                <div class="dots-container" id="dots8">
+                    <span class="dot" onclick="currentSlide(1, 'slideshow8')"></span>
+                    <span class="dot" onclick="currentSlide(2, 'slideshow8')"></span>
+                </div>
+            </div>
+        </div>
+        <!-- troisième rangéé -->    
+        <div class="row">
+            <!-- Neuvième diaporama -->
+            <div class="column">
+                <div class="animph" id="slideshow9">
+                    <div class="slide">
+                        <img class="produit-img" src="MOD9.jpg" alt="Papier peint fleurs turquoise">
+                    </div>
+                    
+                    <div class="slide">
+                        <img class="produit-img" src="MOD9+.jpg" alt="Papier peint fleurs roses">
+                    </div>
+                    
+                    <a class="prev" onclick="changeSlide(-1, 'slideshow9')">❮</a>
+                    <a class="next" onclick="changeSlide(1, 'slideshow9')">❯</a>
+                </div>
+                
+                
+                <div class="produit">
+                    <span class="ref-produit">Réf : YLSPL34</span>
+                    <div class="prix-produit">Prix:76,00 €</div>
+                    <div class="boutton">
+                        <button class="ajouter-au-panier">Ajouter au panier</button>
+                        <button class="zoom">🔍</button>
+                    </div>
+                </div>
+                
+                <div class="dots-container" id="dots9">
+                    <span class="dot" onclick="currentSlide(1, 'slideshow9')"></span>
+                    <span class="dot" onclick="currentSlide(2, 'slideshow9')"></span>
+                </div>
+            </div>
+
+
+            <!-- Dixième diaporama -->
+            <div class="column">
+                <div class="animph" id="slideshow10">
+                    <div class="slide">
+                        <img class="produit-img" src="MOD10.jpg" alt="Papier peint fleurs blanches">
+                    </div>
+                    
+                    <div class="slide">
+                        <img class="produit-img" src="MOD10+.jpg" alt="Papier peint fleurs roses">
+                    </div>
+                    
+                    <a class="prev" onclick="changeSlide(-1, 'slideshow10')">❮</a>
+                    <a class="next" onclick="changeSlide(1, 'slideshow10')">❯</a>
+                </div>
+                
+                
+                <div class="produit">
+                    <span class="ref-produit">Réf : YLSPL31</span>
+                    <div class="prix-produit">Prix:69,45 €</div>
+                    <div class="boutton">
+                        <button class="ajouter-au-panier">Ajouter au panier</button>
+                        <button class="zoom">🔍</button>
+                    </div>
+                </div>
+                
+                <div class="dots-container" id="dots10">
+                    <span class="dot" onclick="currentSlide(1, 'slideshow10')"></span>
+                    <span class="dot" onclick="currentSlide(2, 'slideshow10')"></span>
+                </div>
+            </div>
+
+            <!-- Onzième diaporama -->
+            <div class="column">
+                <div class="animph" id="slideshow11">
+                    <div class="slide">
+                        <img class="produit-img" src="MOD11.jpg" alt="Papier peint fleurs blanches">
+                    </div>
+                    
+                    <div class="slide">
+                        <img class="produit-img" src="MOD11+.jpg" alt="Papier peint fleurs roses">
+                    </div>
+                    
+                    <a class="prev" onclick="changeSlide(-1, 'slideshow11')">❮</a>
+                    <a class="next" onclick="changeSlide(1, 'slideshow11')">❯</a>
+                </div>
+                
+                
+                <div class="produit">
+                    <span class="ref-produit">Réf : YLSPL20</span>
+                    <div class="prix-produit">Prix:41,00 €</div>
+                    <div class="boutton">
+                        <button class="ajouter-au-panier">Ajouter au panier</button>
+                        <button class="zoom">🔍</button>
+                    </div>
+                </div>
+                
+                <div class="dots-container" id="dots11">
+                    <span class="dot" onclick="currentSlide(1, 'slideshow11')"></span>
+                    <span class="dot" onclick="currentSlide(2, 'slideshow11')"></span>
+                </div>
+            </div>
+
+
+        
+            <div class="column">
+                <div class="animph" id="slideshow12">
+                    <div class="slide">
+                        <img class="produit-img" src="MOD12.jpg" alt="Papier peint modernes blanches">
+                    </div>
+                    
+                    <div class="slide">
+                        <img class="produit-img" src="MOD12+.jpg" alt="Papier peint modernes paysages">
+                    </div>
+                    
+                    <a class="prev" onclick="changeSlide(-1, 'slideshow12')">❮</a>
+                    <a class="next" onclick="changeSlide(1, 'slideshow12')">❯</a>
+                </div>
+                
+                
+                <div class="produit">
+                    <span class="ref-produit">Réf : YLSPL37</span>
+                    <div class="prix-produit">Prix:69,45 €</div>
+                    <div class="boutton">
+                        <button class="ajouter-au-panier">Ajouter au panier</button>
+                        <button class="zoom">🔍</button>
+                    </div>
+                </div>
+                
+                <div class="dots-container" id="dots12">
+                    <span class="dot" onclick="currentSlide(1, 'slideshow12')"></span>
+                    <span class="dot" onclick="currentSlide(2, 'slideshow12')"></span>
+                </div>
+            </div>
+
+        
+        </div>  
+        <!-- Quatrième rangée -->
+        <div class="row">
+            <!-- treizième diaporama -->
+            <div class="column">
+                <div class="animph" id="slideshow13">
+                    <div class="slide">
+                        <img class="produit-img" src="MOD13.jpg" alt="Papier peint fleurs turquoise">
+                    </div>
+                    
+                    <div class="slide">
+                        <img class="produit-img" src="MOD13+.jpg" alt="Papier peint motif aquarelle">
+                    </div>
+                    
+                    <a class="prev" onclick="changeSlide(-1, 'slideshow13')">❮</a>
+                    <a class="next" onclick="changeSlide(1, 'slideshow13')">❯</a>
+                </div>
+                
+                <div class="produit">
+                    <span class="ref-produit">Réf : YLSPL23</span>
+                    <div class="prix-produit">62,00 €</div>
+                    <div class="boutton">
+                        <button class="ajouter-au-panier">Ajouter au panier</button>
+                        <button class="zoom">🔍</button>
+                    </div>
+                </div>
+                
+                <div class="dots-container" id="dots13">
+                    <span class="dot" onclick="currentSlide(1, 'slideshow13')"></span>
+                    <span class="dot" onclick="currentSlide(2, 'slideshow13')"></span>
+                </div>
+            </div>
+            
+            <!-- Quatorzième diaporama -->
+            <div class="column">
+                <div class="animph" id="slideshow14">
+                    <div class="slide">
+                        <img class="produit-img" src="MOD14.jpg" alt="Papier peint fleurs blanches">
+                    </div>
+                    
+                    <div class="slide">
+                        <img class="produit-img" src="MOD14+.jpg" alt="Papier peint fleurs délicates">
+                    </div>
+                    
+                    <a class="prev" onclick="changeSlide(-1, 'slideshow14')">❮</a>
+                    <a class="next" onclick="changeSlide(1, 'slideshow14')">❯</a>
+                </div>
+                
+                <div class="produit">
+                    <span class="ref-produit">Réf : YLSPL30</span>
+                    <div class="prix-produit">Prix:76,99 €</div>
+                    <div class="boutton">
+                        <button class="ajouter-au-panier">Ajouter au panier</button>
+                        <button class="zoom">🔍</button>
+                    </div>
+                </div>
+                
+                <div class="dots-container" id="dots6">
+                    <span class="dot" onclick="currentSlide(1, 'slideshow6')"></span>
+                    <span class="dot" onclick="currentSlide(2, 'slideshow6')"></span>
+                </div>
+            </div>
+            
+            <!-- Quinzième diaporama -->
+            <div class="column">
+                <div class="animph" id="slideshow15">
+                    <div class="slide">
+                        <img class="produit-img" src="MOD15.jpg" alt="Papier peint branche fleurie">
+                    </div>
+                    
+                    <div class="slide">
+                        <img class="produit-img" src="MOD15+.jpg" alt="Papier peint fleurs de cerisier">
+                    </div>
+                    
+                    <a class="prev" onclick="changeSlide(-1, 'slideshow15')">❮</a>
+                    <a class="next" onclick="changeSlide(1, 'slideshow15')">❯</a>
+                </div>
+                
+                <div class="produit">
+                    <span class="ref-produit">Réf : YLSPL39</span>
+                    <div class="prix-produit">Prix:45,00 €</div>
+                    <div class="boutton">
+                        <button class="ajouter-au-panier">Ajouter au panier</button>
+                        <button class="zoom">🔍</button>
+                    </div>
+                </div>
+                
+                <div class="dots-container" id="dots15">
+                    <span class="dot" onclick="currentSlide(1, 'slideshow15')"></span>
+                    <span class="dot" onclick="currentSlide(2, 'slideshow15')"></span>
+                </div>
+            </div>
+            
+        
+          
+            </div>
+        </div>
+        
+
+
+
+
+    </div>
+
+
+    <footer class="pied-page">
+        <div class="copyright">
+            Copyright © 2020 yolodeco.
+        </div>
+        <div class="réseaux-sociaux">
+            <a href="#" class="réseau-soc" target="_blank" title="Twitter">
+                t
+            </a>
+            <a href="#" class="réseau-soc" target="_blank" title="Facebook">
+                f
+            </a>
+            <a href="#" class="réseau-soc" target="_blank" title="LinkedIn">
+                in
+            </a>
+        </div>
+    </footer>
+
+    <script src="image.js" defer></script>
+</body>
+</html>
