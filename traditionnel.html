@@ -1,0 +1,564 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="image.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    <title>Galerie de Produits</title>
+   
+</head>
+<body>
+    <header> 
+        <div style="display: flex; justify-content: space-between;align-items: center;max-width: 800px;margin:auto;">
+          <div class="cphd">
+            <a href="panier.html" class="bouton-panier">
+                <i class="fas fa-shopping-cart icone-panier"></i>
+                <span class="compteur-panier" id="compteur">0</span>
+            </a>
+          </div>
+        </div>
+    </header>
+
+    <div class="collec-mod">
+        <img src="catalogue-Tradi.jpg" alt="Collection traditionnelle" class="mod-image">
+        <div class="collection-subtitle">COLLECTION</div>
+        <div class="collection-title">TRADITIONNELLE</div>
+    </div>
+        
+    <div class="container">
+        <div class="row">
+           
+
+
+            <div class="column">
+                <div class="animph" id="slideshow1">
+                    <div class="slide">
+                        <img class="produit-img" src="TRADI1.jpg" >
+                    </div>
+                    
+                    <div class="slide">
+                        <img class="produit-img" src="TRADI1+.jpg" >
+                    </div>
+                    
+                    <a class="prev" onclick="changeSlide(-1, 'slideshow1')">❮</a>
+                    <a class="next" onclick="changeSlide(1, 'slideshow1')">❯</a>
+                </div>
+                
+                <div class="produit">
+                    <span class="ref-produit">Réf : RMFK95</span>
+                    <div class="prix-produit">Prix:54,45 €</div>
+                    <div class="boutton">
+                        <button class="ajouter-au-panier" data-ref="RMFK95" >Ajouter au panier</button>
+                        <button class="zoom">🔍</button>
+                    </div>
+                </div>
+                
+                <div class="dots-container" id="dots1">
+                    <span class="dot" onclick="currentSlide(1, 'slideshow1')"></span>
+                    <span class="dot" onclick="currentSlide(2, 'slideshow1')"></span>
+                </div>
+            </div>
+            
+          
+
+
+            <div class="column">
+                <div class="animph" id="slideshow2">
+                    <div class="slide">
+                        <img class="produit-img" src="TRADI2.jpg" >
+                    </div>
+                    
+                    <div class="slide">
+                        <img class="produit-img" src="TRADI2+.jpg" >
+                    </div>
+                    
+                    <a class="prev" onclick="changeSlide(-1, 'slideshow2')">❮</a>
+                    <a class="next" onclick="changeSlide(1, 'slideshow2')">❯</a>
+                </div>
+                
+                <div class="produit">
+                    <span class="ref-produit">Réf : RMFK27</span>
+                    <div class="prix-produit">64,28 €</div>
+                    <div class="boutton">
+                        <button class="ajouter-au-panier">Ajouter au panier</button>
+                        <button class="zoom">🔍</button>
+                    </div>
+                </div>
+                
+                <div class="dots-container" id="dots2">
+                    <span class="dot" onclick="currentSlide(1, 'slideshow2')"></span>
+                    <span class="dot" onclick="currentSlide(2, 'slideshow2')"></span>
+                </div>
+            </div>
+            
+          
+
+
+            <div class="column">
+                <div class="animph" id="slideshow3">
+                    <div class="slide">
+                        <img class="produit-img" src="TRADI3.jpg" >
+                    </div>
+                    
+                    <div class="slide">
+                        <img class="produit-img" src="TRADI3+.jpg">
+                    </div>
+                    
+                    <a class="prev" onclick="changeSlide(-1, 'slideshow3')">❮</a>
+                    <a class="next" onclick="changeSlide(1, 'slideshow3')">❯</a>
+                </div>
+                
+                <div class="produit">
+                    <span class="ref-produit">Réf : RMFK29</span>
+                    <div class="prix-produit">56,99 €</div>
+                    <div class="boutton">
+                        <button class="ajouter-au-panier">Ajouter au panier</button>
+                        <button class="zoom">🔍</button>
+                    </div>
+                </div>
+                
+                <div class="dots-container" id="dots3">
+                    <span class="dot" onclick="currentSlide(1, 'slideshow3')"></span>
+                    <span class="dot" onclick="currentSlide(2, 'slideshow3')"></span>
+                </div>
+            </div>
+            
+            
+
+            <div class="column">
+                <div class="animph" id="slideshow4">
+                    <div class="slide">
+                        <img class="produit-img" src="TRADI4.jpg">
+                    </div>
+                    
+                    <div class="slide">
+                        <img class="produit-img" src="TRADI4+.jpg">
+                    </div>
+                    
+                    <a class="prev" onclick="changeSlide(-1, 'slideshow4')">❮</a>
+                    <a class="next" onclick="changeSlide(1, 'slideshow4')">❯</a>
+                </div>
+                
+                <div class="produit">
+                    <span class="ref-produit">Réf : RMFK31</span>
+                    <div class="prix-produit">85,99 €</div>
+                    <div class="boutton">
+                        <button class="ajouter-au-panier">Ajouter au panier</button>
+                        <button class="zoom">🔍</button>
+                    </div>
+                </div>
+                
+                <div class="dots-container" id="dots4">
+                    <span class="dot" onclick="currentSlide(1, 'slideshow4')"></span>
+                    <span class="dot" onclick="currentSlide(2, 'slideshow4')"></span>
+                </div>
+            </div>
+        </div>
+        
+        
+
+        <div class="row">
+            
+
+            <div class="column">
+                <div class="animph" id="slideshow5">
+                    <div class="slide">
+                        <img class="produit-img" src="TRADI5.jpg" >
+                    </div>
+                    
+                    <div class="slide">
+                        <img class="produit-img" src="TRADI5+.jpg" >
+                    </div>
+                    
+                    <a class="prev" onclick="changeSlide(-1, 'slideshow5')">❮</a>
+                    <a class="next" onclick="changeSlide(1, 'slideshow5')">❯</a>
+                </div>
+                
+                <div class="produit">
+                    <span class="ref-produit">Réf : RMFK33</span>
+                    <div class="prix-produit">82,99 €</div>
+                    <div class="boutton">
+                        <button class="ajouter-au-panier">Ajouter au panier</button>
+                        <button class="zoom">🔍</button>
+                    </div>
+                </div>
+                
+                <div class="dots-container" id="dots5">
+                    <span class="dot" onclick="currentSlide(1, 'slideshow5')"></span>
+                    <span class="dot" onclick="currentSlide(2, 'slideshow5')"></span>
+                </div>
+            </div>
+            
+           
+
+            <div class="column">
+                <div class="animph" id="slideshow6">
+                    <div class="slide">
+                        <img class="produit-img" src="TRADI6.jpg">
+                    </div>
+                    
+                    <div class="slide">
+                        <img class="produit-img" src="TRADI6+.jpg">
+                    </div>
+                    
+                    <a class="prev" onclick="changeSlide(-1, 'slideshow6')">❮</a>
+                    <a class="next" onclick="changeSlide(1, 'slideshow6')">❯</a>
+                </div>
+                
+                <div class="produit">
+                    <span class="ref-produit">Réf : RMFK35</span>
+                    <div class="prix-produit">75,45 €</div>
+                    <div class="boutton">
+                        <button class="ajouter-au-panier">Ajouter au panier</button>
+                        <button class="zoom">🔍</button>
+                    </div>
+                </div>
+                
+                <div class="dots-container" id="dots6">
+                    <span class="dot" onclick="currentSlide(1, 'slideshow6')"></span>
+                    <span class="dot" onclick="currentSlide(2, 'slideshow6')"></span>
+                </div>
+            </div>
+            
+            
+            <div class="column">
+                <div class="animph" id="slideshow7">
+                    <div class="slide">
+                        <img class="produit-img" src="TRADI7.jpg" >
+                    </div>
+                    
+                    <div class="slide">
+                        <img class="produit-img" src="TRADI7+.jpg">
+                    </div>
+                    
+                    <a class="prev" onclick="changeSlide(-1, 'slideshow7')">❮</a>
+                    <a class="next" onclick="changeSlide(1, 'slideshow7')">❯</a>
+                </div>
+                
+                <div class="produit">
+                    <span class="ref-produit">Réf : RMFK37</span>
+                    <div class="prix-produit">59,99 €</div>
+                    <div class="boutton">
+                        <button class="ajouter-au-panier">Ajouter au panier</button>
+                        <button class="zoom">🔍</button>
+                    </div>
+                </div>
+                
+                <div class="dots-container" id="dots7">
+                    <span class="dot" onclick="currentSlide(1, 'slideshow7')"></span>
+                    <span class="dot" onclick="currentSlide(2, 'slideshow7')"></span>
+                </div>
+            </div>
+            
+            
+            <div class="column">
+                <div class="animph" id="slideshow8">
+                    <div class="slide">
+                        <img class="produit-img" src="TRADI8.jpg">
+                    </div>
+                    
+                    <div class="slide">
+                        <img class="produit-img" src="TRADI8+.jpg">
+                    </div>
+                    
+                    <a class="prev" onclick="changeSlide(-1, 'slideshow8')">❮</a>
+                    <a class="next" onclick="changeSlide(1, 'slideshow8')">❯</a>
+                </div>
+                
+                <div class="produit">
+                    <span class="ref-produit">Réf : RMFK39</span>
+                    <div class="prix-produit">68,45 €</div>
+                    <div class="boutton">
+                        <button class="ajouter-au-panier">Ajouter au panier</button>
+                        <button class="zoom">🔍</button>
+                    </div>
+                </div>
+                
+                <div class="dots-container" id="dots8">
+                    <span class="dot" onclick="currentSlide(1, 'slideshow8')"></span>
+                    <span class="dot" onclick="currentSlide(2, 'slideshow8')"></span>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <div class="row">
+         
+
+            <div class="column">
+                <div class="animph" id="slideshow9">
+                    <div class="slide">
+                        <img class="produit-img" src="TRADI9.jpg">
+                    </div>
+                    
+                    <div class="slide">
+                        <img class="produit-img" src="TRADI9+.jpg">
+                    </div>
+                    
+                    <a class="prev" onclick="changeSlide(-1, 'slideshow9')">❮</a>
+                    <a class="next" onclick="changeSlide(1, 'slideshow9')">❯</a>
+                </div>
+                
+                
+                <div class="produit">
+                    <span class="ref-produit">Réf : RMFK25</span>
+                    <div class="prix-produit">Prix:63,99 €</div>
+                    <div class="boutton">
+                        <button class="ajouter-au-panier">Ajouter au panier</button>
+                        <button class="zoom">🔍</button>
+                    </div>
+                </div>
+                
+                <div class="dots-container" id="dots9">
+                    <span class="dot" onclick="currentSlide(1, 'slideshow9')"></span>
+                    <span class="dot" onclick="currentSlide(2, 'slideshow9')"></span>
+                </div>
+            </div>
+
+
+           
+            <div class="column">
+                <div class="animph" id="slideshow10">
+                    <div class="slide">
+                        <img class="produit-img" src="TRADI10.jpg">
+                    </div>
+                    
+                    <div class="slide">
+                        <img class="produit-img" src="TRADI10+.jpg">
+                    </div>
+                    
+                    <a class="prev" onclick="changeSlide(-1, 'slideshow10')">❮</a>
+                    <a class="next" onclick="changeSlide(1, 'slideshow10')">❯</a>
+                </div>
+                
+                
+                <div class="produit">
+                    <span class="ref-produit">Réf : RMFK21</span>
+                    <div class="prix-produit">Prix:46,99 €</div>
+                    <div class="boutton">
+                        <button class="ajouter-au-panier">Ajouter au panier</button>
+                        <button class="zoom">🔍</button>
+                    </div>
+                </div>
+                
+                <div class="dots-container" id="dots10">
+                    <span class="dot" onclick="currentSlide(1, 'slideshow10')"></span>
+                    <span class="dot" onclick="currentSlide(2, 'slideshow10')"></span>
+                </div>
+            </div>
+
+            
+            <div class="column">
+                <div class="animph" id="slideshow11">
+                    <div class="slide">
+                        <img class="produit-img" src="TRADI11.jpg">
+                    </div>
+                    
+                    <div class="slide">
+                        <img class="produit-img" src="TRADI11+.jpg">
+                    </div>
+                    
+                    <a class="prev" onclick="changeSlide(-1, 'slideshow11')">❮</a>
+                    <a class="next" onclick="changeSlide(1, 'slideshow11')">❯</a>
+                </div>
+                
+                
+                <div class="produit">
+                    <span class="ref-produit">Réf : RMFK13</span>
+                    <div class="produit-prix">Prix:76,19 €</div>
+                    <div class="boutton">
+                        <button class="ajouter-au-panier">Ajouter au panier</button>
+                        <button class="zoom">🔍</button>
+                    </div>
+                </div>
+                
+                <div class="dots-container" id="dots11">
+                    <span class="dot" onclick="currentSlide(1, 'slideshow11')"></span>
+                    <span class="dot" onclick="currentSlide(2, 'slideshow11')"></span>
+                </div>
+            </div>
+
+
+            
+            <div class="column">
+                <div class="animph" id="slideshow12">
+                    <div class="slide">
+                        <img class="produit-img" src="TRADI12.jpg">
+                    </div>
+                    
+                    <div class="slide">
+                        <img class="produit-img" src="TRADI12+.jpg">
+                    </div>
+                    
+                    <a class="prev" onclick="changeSlide(-1, 'slideshow12')">❮</a>
+                    <a class="next" onclick="changeSlide(1, 'slideshow12')">❯</a>
+                </div>
+                
+                
+                <div class="produit">
+                    <span class="ref-produit">Réf : RMFK18</span>
+                    <div class="prix-produit">Prix:49,45 €</div>
+                    <div class="boutton">
+                        <button class="ajouter-au-panier">Ajouter au panier</button>
+                        <button class="zoom">🔍</button>
+                    </div>
+                </div>
+                
+                <div class="dots-container" id="dots12">
+                    <span class="dot" onclick="currentSlide(1, 'slideshow12')"></span>
+                    <span class="dot" onclick="currentSlide(2, 'slideshow12')"></span>
+                </div>
+            </div>
+
+        
+        </div>  
+        
+        <div class="row">
+            
+            <div class="column">
+                <div class="animph" id="slideshow13">
+                    <div class="slide">
+                        <img class="produit-img" src="TRADI13.jpg" >
+                    </div>
+                    
+                    <div class="slide">
+                        <img class="produit-img" src="TRADI13+.jpg" >
+                    </div>
+                    
+                    <a class="prev" onclick="changeSlide(-1, 'slideshow13')">❮</a>
+                    <a class="next" onclick="changeSlide(1, 'slideshow13')">❯</a>
+                </div>
+                
+                <div class="produit">
+                    <span class="ref-produit">Réf : RMFK33</span>
+                    <div class="prix-produit">45,19 €</div>
+                    <div class="boutton">
+                        <button class="ajouter-au-panier">Ajouter au panier</button>
+                        <button class="zoom">🔍</button>
+                    </div>
+                </div>
+                
+                <div class="dots-container" id="dots13">
+                    <span class="dot" onclick="currentSlide(1, 'slideshow13')"></span>
+                    <span class="dot" onclick="currentSlide(2, 'slideshow13')"></span>
+                </div>
+            </div>
+            
+           
+            <div class="column">
+                <div class="animph" id="slideshow14">
+                    <div class="slide">
+                        <img class="produit-img" src="TRADI14.jpg">
+                    </div>
+                    
+                    <div class="slide">
+                        <img class="produit-img" src="TRADI14+.jpg">
+                    </div>
+                    
+                    <a class="prev" onclick="changeSlide(-1, 'slideshow14')">❮</a>
+                    <a class="next" onclick="changeSlide(1, 'slideshow14')">❯</a>
+                </div>
+                
+                <div class="produit">
+                    <span class="ref-produit">Réf : RMFK17</span>
+                    <div class="prix-produit">64,00 €</div>
+                    <div class="boutton">
+                        <button class="ajouter-au-panier">Ajouter au panier</button>
+                        <button class="zoom">🔍</button>
+                    </div>
+                </div>
+                
+                <div class="dots-container" id="dots14">
+                    <span class="dot" onclick="currentSlide(1, 'slideshow14')"></span>
+                    <span class="dot" onclick="currentSlide(2, 'slideshow14')"></span>
+                </div>
+            </div>
+            
+            
+            <div class="column">
+                <div class="animph" id="slideshow15">
+                    <div class="slide">
+                        <img class="produit-img" src="TRADI15.jpg" >
+                    </div>
+                    
+                    <div class="slide">
+                        <img class="produit-img" src="TRADI15+.jpg" >
+                    </div>
+                    
+                    <a class="prev" onclick="changeSlide(-1, 'slideshow15')">❮</a>
+                    <a class="next" onclick="changeSlide(1, 'slideshow15')">❯</a>
+                </div>
+                
+                <div class="produit">
+                    <span class="ref-produit">Réf : RMFK37</span>
+                    <div class="prix-produit">64,99 €</div>
+                    <div class="boutton">
+                        <button class="ajouter-au-panier">Ajouter au panier</button>
+                        <button class="zoom">🔍</button>
+                    </div>
+                </div>
+                
+                <div class="dots-container" id="dots15">
+                    <span class="dot" onclick="currentSlide(1, 'slideshow15')"></span>
+                    <span class="dot" onclick="currentSlide(2, 'slideshow15')"></span>
+                </div>
+            </div>
+            
+            
+            <div class="column">
+                <div class="animph" id="slideshow16">
+                    <div class="slide">
+                        <img class="produit-img" src="TRADI16.jpg" >
+                    </div>
+                    
+                    <div class="slide">
+                        <img class="produit-img" src="TRADI16+.jpg" >
+                    </div>
+                    
+                    <a class="prev" onclick="changeSlide(-1, 'slideshow16')">❮</a>
+                    <a class="next" onclick="changeSlide(1, 'slideshow16')">❯</a>
+                </div>
+                
+                <div class="produit">
+                    <span class="ref-produit">Réf : RMFK23</span>
+                    <div class="prix-produit">39,99 €</div>
+                    <div class="boutton">
+                        <button class="ajouter-au-panier">Ajouter au panier</button>
+                        <button class="zoom">🔍</button>
+                    </div>
+                </div>
+                
+                <div class="dots-container" id="dots16">
+                    <span class="dot" onclick="currentSlide(1, 'slideshow16')"></span>
+                    <span class="dot" onclick="currentSlide(2, 'slideshow16')"></span>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    <footer class="pied-page">
+        <div class="copyright">
+            Copyright © 2020 yolodeco.
+        </div>
+        <div class="réseaux-sociaux">
+            <a href="#" class="réseau-soc" target="_blank" title="Twitter">
+                t
+            </a>
+            <a href="#" class="réseau-soc" target="_blank" title="Facebook">
+                f
+            </a>
+            <a href="#" class="réseau-soc" target="_blank" title="LinkedIn">
+                in
+            </a>
+        </div>
+    </footer>
+
+    <script src="image.js" defer></script>
+</body>
+</html>
