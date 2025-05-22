@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yolo Deco - Image Gallery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="code.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+</head>
+<body>
+  <section class="tete">
+    <img src="lila.jpg"  alt="logo du site" src="lila.jpeg"   > 
+    <nav> 
+      <ul>
+        <li><a href="#" class="lien-accueil">Acceuil</a></li>
+        <li><a href="#" class="lien-papierpeint">papier peint</a></li> 
+        <div class="menu-deroulant">
+          <button class="bouton-menu">▼</button>
+          <div class="contenu-menu">
+            <a href="florale.html">Florale </a>
+            <a href="modrne.html">Moderne</a>
+            <a href="traditionnel.html">Traditionnelle</a>
+            <a href="mmm.html">Enfant</a>
+            <a href="pierre.html">Pierre</a>
+          </div>
+        </div>
+        <li><a href="faience-adh.html">Faïence Adhésive</a></li>
+        <li><a href="rouleauadhe.html">Rouleau Adhésif</a></li>
+        <li><a href="celine.html" target="_blank">réseau</a></li>
+        
+        
+
+           
+              
+       <a href="panier.html" class="bouton-panier">
+        <i class="fas fa-shopping-cart icone-panier"></i>
+         </a>
+            
+  </a>
+</ul>
+</li>
+
+        
+      
+    </nav>
+  </section>
+
+  
+  <div class="galerie">
+    <img src="azertyfleur.jpeg" alt="Image 1" class="image">
+   
+    <img src="papier-peint-fleurs-vintage-flowers-kam-et-leon-378649.webp.jpeg"  class="image">
+    <img src="catalogue-enfant-2324-nv_Page_45-scaled.jpg" class="image">
+    <img src="vert.jpeg" alt="Image 4" class="image">
+    <img src="trad.jpeg" alt="Image 5" class="image">
+
+    <div class="overlay-dark"></div>
+
+    <button class="prev" aria-label="Prev Image">&#10094;</button>
+    <button class="next" aria-label="Next Image">&#10095;</button>
+
+    
+    <div class="mins">
+      <img src="azertyfleur.jpeg"  class="min active" onclick="showImageByIndex(0)">
+      <img src="papier-peint-fleurs-vintage-flowers-kam-et-leon-378649.webp.jpeg"  class="min" onclick="showImageByIndex(1)">
+      <img src="catalogue-enfant-2324-nv_Page_45-scaled.jpg"  class="min" onclick="showImageByIndex(2)">
+      <img src="vert.jpeg"  class="min" onclick="showImageByIndex(3)">
+      <img src="trad.jpeg" class="min" onclick="showImageByIndex(4)">
+    </div>
+  </div>
+
+  <p class="text-c"> Petit prix , grande inspiration : le papier qui donne vie a vos idées </p>
+
+
+
+  <div class="vdo">
+    <video controls>
+      <source src="pub-tv-papier-peint-yolo-deco-wrq-ljdrn-ywlw-dykw-ytshorts.savetube.me.mp4" "type="video/mp4">
+      
+    </video>
+  </div>
+
+
+  <footer class="pied-page">
+    
+    
+    <div class="copyright">
+        Copyright © 2020 yolodeco.
+    </div>
+    <div class="réseaux-sociaux">
+        <a href="#" class="réseau-soc" target="_blank" title="Twitter">
+            t
+        </a>
+        <a href="#" class="réseau-soc" target="_blank" title="Facebook">
+            f
+        </a>
+        <a href="#" class="réseau-soc" target="_blank" title="LinkedIn">
+            in
+        </a>
+    </div>
+</footer>
+
+<script src="code.js"></script>
+
+</body>
+</html>
