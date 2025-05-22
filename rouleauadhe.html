@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="image.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    <title>Galerie des rouleaux</title>
+   
+</head>
+<body>
+    <header> 
+        <div style="display: flex; justify-content: space-between;align-items: center;max-width: 800px;margin:auto;">
+          <div class="cphd">
+            <a href="panier.html" class="bouton-panier">
+                <i class="fas fa-shopping-cart icone-panier"></i>
+                <span class="compteur-panier" id="compteur">0</span>
+            </a>
+          </div>
+        </div>
+    </header>
+
+    <div class="collec-mod">
+        <img src="catalogue-rouleau.jpg" alt="Collection rouleaux Adhésifs" class="mod-image">
+        <div class="collection-subtitle">COLLECTION</div>
+        <div class="collection-title">ROULEAUX ADHESIFS</div>
+    </div>
+        
+    <div class="container">
+        <div class="row">
+            <!-- Premier diaporama -->
+            <div class="column">
+                <div class="animph" id="slideshow1">
+                    <div class="slide">
+                        <img class="produit-img" src="rouleau1.png" alt="Papier peint fleurs blanches">
+                    </div>
+                    
+                    <div class="slide">
+                        <img class="produit-img" src="rouleau1+.png" alt="Papier peint fleurs roses">
+                    </div>
+                    
+                    <a class="prev" onclick="changeSlide(-1, 'slideshow1')">❮</a>
+                    <a class="next" onclick="changeSlide(1, 'slideshow1')">❯</a>
+                </div>
+                
+                <div class="produit">
+                    <span class="ref-produit">Réf : RA34</span>
+                    <div class="prix-produit">35,45 €</div>
+                    <div class="boutton">
+                        <button class="ajouter-au-panier" data-ref="RMFK95" data-price="35.45" data-name="papier peint fleurs blanches " data-image="MOD1.jpg">Ajouter au panier</button>
+                        <button class="zoom">🔍</button>
+                    </div>
+                </div>
+                
+                <div class="dots-container" id="dots1">
+                    <span class="dot" onclick="currentSlide(1, 'slideshow1')"></span>
+                    <span class="dot" onclick="currentSlide(2, 'slideshow1')"></span>
+                </div>
+            </div>
+            
+            <!-- Deuxième diaporama -->
+            <div class="column">
+                <div class="animph" id="slideshow2">
+                    <div class="slide">
+                        <img class="produit-img" src="rouleau2.png" alt="rouleau2">
+                    </div>
+                    
+                    <div class="slide">
+                        <img class="produit-img" src="rouleau2+.png" alt="rouleau2">
+                    </div>
+                    
+                    <a class="prev" onclick="changeSlide(-1, 'slideshow2')">❮</a>
+                    <a class="next" onclick="changeSlide(1, 'slideshow2')">❯</a>
+                </div>
+                
+                <div class="produit">
+                    <span class="ref-produit">Réf : RA12</span>
+                    <div class="prix-produit">58,28 €</div>
+                    <div class="boutton">
+                        <button class="ajouter-au-panier">Ajouter au panier</button>
+                        <button class="zoom">🔍</button>
+                    </div>
+                </div>
+                
+                <div class="dots-container" id="dots2">
+                    <span class="dot" onclick="currentSlide(1, 'slideshow2')"></span>
+                    <span class="dot" onclick="currentSlide(2, 'slideshow2')"></span>
+                </div>
+            </div>
+            
+            <!-- Troisième diaporama -->
+            <div class="column">
+                <div class="animph" id="slideshow3">
+                    <div class="slide">
+                        <img class="produit-img" src="rouleau3.png" alt="rouleau3">
+                    </div>
+                    
+                    <div class="slide">
+                        <img class="produit-img" src="rouleau3+.png" alt="rouleau3">
+                    </div>
+                    
+                    <a class="prev" onclick="changeSlide(-1, 'slideshow3')">❮</a>
+                    <a class="next" onclick="changeSlide(1, 'slideshow3')">❯</a>
+                </div>
+                
+                <div class="produit">
+                    <span class="ref-produit">Réf : RA56</span>
+                    <div class="prix-produit">46,78 €</div>
+                    <div class="boutton">
+                        <button class="ajouter-au-panier">Ajouter au panier</button>
+                        <button class="zoom">🔍</button>
+                    </div>
+                </div>
+                
+                <div class="dots-container" id="dots3">
+                    <span class="dot" onclick="currentSlide(1, 'slideshow3')"></span>
+                    <span class="dot" onclick="currentSlide(2, 'slideshow3')"></span>
+                </div>
+            </div>
+            
+           
+        </div>
+        <!-- Deuxième rangée -->
+        <div class="row">
+            <!-- Quatrième diaporama -->
+            <div class="column">
+                <div class="animph" id="slideshow4">
+                    <div class="slide">
+                        <img class="produit-img" src="rouleau4.png" alt="rouleau4">
+                    </div>
+                    
+                    <div class="slide">
+                        <img class="produit-img" src="rouleau4+.png" alt="rouleau4">
+                    </div>
+                    
+                    <a class="prev" onclick="changeSlide(-1, 'slideshow4')">❮</a>
+                    <a class="next" onclick="changeSlide(1, 'slideshow4')">❯</a>
+                </div>
+                
+                <div class="produit">
+                    <span class="ref-produit">Réf : RA52</span>
+                    <div class="prix-produit">68,51 €</div>
+                    <div class="boutton">
+                        <button class="ajouter-au-panier">Ajouter au panier</button>
+                        <button class="zoom">🔍</button>
+                    </div>
+                </div>
+                
+                <div class="dots-container" id="dots4">
+                    <span class="dot" onclick="currentSlide(1, 'slideshow4')"></span>
+                    <span class="dot" onclick="currentSlide(2, 'slideshow4')"></span>
+                </div>
+            </div>
+        
+        
+            <!-- Cinquième diaporama -->
+            <div class="column">
+                <div class="animph" id="slideshow5">
+                    <div class="slide">
+                        <img class="produit-img" src="rouleau5.png" alt="rouleau5">
+                    </div>
+                    
+                    <div class="slide">
+                        <img class="produit-img" src="rouleau5.png" alt="rouleau5">
+                    </div>
+                    
+                    <a class="prev" onclick="changeSlide(-1, 'slideshow5')">❮</a>
+                    <a class="next" onclick="changeSlide(1, 'slideshow5')">❯</a>
+                </div>
+                
+                <div class="produit">
+                    <span class="ref-produit">Réf : RA24</span>
+                    <div class="prix-produit">65,35 €</div>
+                    <div class="boutton">
+                        <button class="ajouter-au-panier">Ajouter au panier</button>
+                        <button class="zoom">🔍</button>
+                    </div>
+                </div>
+                
+                <div class="dots-container" id="dots5">
+                    <span class="dot" onclick="currentSlide(1, 'slideshow5')"></span>
+                    <span class="dot" onclick="currentSlide(2, 'slideshow5')"></span>
+                </div>
+            </div>
+            
+         
+            <div class="column">
+                <div class="animph" id="slideshow6">
+                    <div class="slide">
+                        <img class="produit-img" src="rouleau6.png" alt="rouleau6">
+                    </div>
+    
+                    <div class="slide">
+                        <img class="produit-img" src="rouleau6+.png" alt="rouleau6">
+                    </div>
+                    
+                    <a class="prev" onclick="changeSlide(-1, 'slideshow6')">❮</a>
+                    <a class="next" onclick="changeSlide(1, 'slideshow6')">❯</a>
+                </div>
+                
+                <div class="produit">
+                    <span class="ref-produit">Réf : RA34</span>
+                    <div class="prix-produit">62,45 €</div>
+                    <div class="boutton">
+                        <button class="ajouter-au-panier">Ajouter au panier</button>
+                        <button class="zoom">🔍</button>
+                    </div>
+                </div>
+                
+                <div class="dots-container" id="dots6">
+                    <span class="dot" onclick="currentSlide(1, 'slideshow6')"></span>
+                    <span class="dot" onclick="currentSlide(2, 'slideshow6')"></span>
+                </div>
+            </div>
+            
+            
+        </div>
+        
+
+
+
+
+    </div>
+
+
+    <footer class="pied-page">
+        <div class="copyright">
+            Copyright © 2020 yolodeco.
+        </div>
+        <div class="réseaux-sociaux">
+            <a href="#" class="réseau-soc" target="_blank" title="Twitter">
+                t
+            </a>
+            <a href="#" class="réseau-soc" target="_blank" title="Facebook">
+                f
+            </a>
+            <a href="#" class="réseau-soc" target="_blank" title="LinkedIn">
+                in
+            </a>
+        </div>
+    </footer>
+
+    <script src="image.js" defer></script>
+</body>
+</html>
